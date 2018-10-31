@@ -14,6 +14,9 @@ $(document).ready(function(){
             $('#Navbar').removeClass('custom_navbar');
         }
     });
+    $('.carousel').carousel({        
+        interval: 2000
+    });
 
     //Show Hidden Gallery Full Size Display on Img click.
     $('img.img_moon_phase_thumbnail').on( "click", function() {
@@ -25,7 +28,7 @@ $(document).ready(function(){
         console.log(srcImg);
       });
     //Moon Galllery on Hover add border styling
-    $('img.img_moon_phase_thumbnail').hover(function(){
+    $('div.img_box').hover(function(){
         $(this).addClass('moon_border');
     },function(){
         $(this).removeClass('moon_border');
