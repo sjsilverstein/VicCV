@@ -16,6 +16,16 @@ img{
 body{
     font-family: gothicFont;
 }
+/*
+.text-gothic{
+    font-family: gothicFont;
+}
+p{
+    font-family: Sans-Serif;
+}*/
+a{
+    font-family:  Sans-Serif;
+}
 .dv{
     border: 2px dotted red;
 }
@@ -23,7 +33,17 @@ body{
     background: rgba(0, 0, 0, 0.4);
     border-radius: 20px;
 }
-
+.carousel-control-prev{
+    width: 30%;
+}
+.carousel-control-next{
+    width: 30%;
+}
+.icon_box{
+    height: 60px;
+    width: 60px;
+    margin: 20px 20px;
+}
 .header_box{
     padding-top: 20vh;
     height: 100vh;
