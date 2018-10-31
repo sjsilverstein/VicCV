@@ -1,5 +1,6 @@
 ﻿// Write your JavaScript code.
 $(document).ready(function(){
+    console.log("JS document ready!")
 
     //Lock custom navbar when scrolled.
     $(window).scroll(function() {
@@ -23,6 +24,12 @@ $(document).ready(function(){
         $('#fullscalegalleryimg h1').html(imgName);
         console.log(srcImg);
       });
+    //Moon Galllery on Hover add border styling
+    $('img.img_moon_phase_thumbnail').hover(function(){
+        $(this).addClass('moon_border');
+    },function(){
+        $(this).removeClass('moon_border');
+    });
     //Hidden Gallery Full Size Display on click.
       $("#fullscalegalleryimg").click(function(){
 		$(this).hide();
